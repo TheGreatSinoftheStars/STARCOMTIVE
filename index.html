@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="google-site-verification" content="pz72A_SOUbG4L7dPVTVI81N2NCn6mhxR7WBHsYVQMho" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> STARCOMTIVE (XIB)</title>
+    
+    <meta name="description" content="Website Resmi Kelas FAMILY (XIB) angkatan 2025-2026-2026 Fakultas Tarbiyah IAINU Kebumen. Galeri, Struktur Organisasi, dan Dokumentasi Kegiatan Mahasiswa.">
+    <meta name="keywords" content="FAMILY (XIB), IAINU Kebumen, Kelas FAMILY (XIB) 2025, Fakultas Tarbiyah, Mahasiswa Kebumen">
+    <meta name="theme-color" content="#000000">
+    
+    <meta property="og:site_name" content="FAMILY (XIB) Official IAINU Kebumen">
+    <meta property="og:url" content="https://www.instagram.com/starcomtive.id?igsh=MTY3Mmd0N3FxYWE4dw=="> 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FAMILY (XIB) Official - IAINU Kebumen">
+    <meta property="og:description" content="Website Resmi Keluarga Besar FAMILY (XIB) 2025. One Heart, One Goal.">
+    <meta property="og:image" content="FAMILY (XIB).jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAMILY (XIB) Official - IAINU Kebumen">
+    <meta name="twitter:description" content="Website Resmi Keluarga Besar FAMILY (XIB) 2025. One Heart, One Goal.">
+    <meta name="twitter:image" content="FAMILY (XIB).jpg">
+
+    <meta itemprop="image" content="FAMILY (XIB).jpg">
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FAMILY (XIB) Official",
+        "url": "https://paib-official.com", 
+        "logo": "FAMILY (XIB).jpg",
+        "sameAs": [
+          "https://www.instagram.com/iainukebumen/",
+          "https://twitter.com/iainu_kebumen"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FAMILY (XIB) Official IAINU Kebumen",
+        "alternateName": ["FAMILY (XIB) 2025", "FAMILY (XIB) Kebumen"],
+        "url": "https://paib-official.com"
+      }
+    ]
+    </script>
+
+    <link rel="icon" type="image/jpeg" href="FAMILY (XIB).jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="FAMILY (XIB).jpg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-dark': '#001a1a',
+                        'green-main': '#1F6F6A',
+                        'green-light': '#1E7A5E',
+                        'glass': 'rgba(255, 255, 255, 0.05)',
+                    },
+                    fontFamily: {
+                        'tech': ['Orbitron', 'sans-serif'],
+                        'body': ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'spin-slow': 'spin 3s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050a0a;
+            color: #e5e5e5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #001a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background:#1F6F6A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1E7A5E;
+        }
+
+        .glass-panel {
+            background: rgba(0, 31, 31, 0.6);
+            border: 1px solid rgba(31, 111, 106, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            transform: translateZ(0); 
+            -webkit-transform: translateZ(0);
+        }
+
+        @media (min-width: 768px) {
+            .glass-panel {
+                background: rgba(0, 31, 31, 0.4);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+            }
+        }
+
+        #intro-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #000000, #001f1f);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+            will-change: transform, opacity;
+        }
+
+        .hidden-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .active-section {
+            display: block;
+            animation: fadeIn 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .neon-text {
+            text-shadow: 0 0 5px #1F6F6A, 0 0 10px #1F6F6A, 0 0 20px #1E7A5E;
+        }
+
+        /* --- TREE CSS (TREE LAYOUT FOR ALL SCREENS) --- */
+        .tree {
+            display: table;
+            margin: 0 auto;
+            width: max-content;
+            min-width: 100%;
+            padding-bottom: 50px;
+        }
+        .tree ul {
+            padding-top: 20px; 
+            position: relative;
+            transition: all 0.5s;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .tree li {
+            float: left; 
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 2px 0 2px;
+            transition: all 0.5s;
+        }
+        
+        @media (min-width: 768px) {
+            .tree li {
+                padding: 20px 10px 0 10px;
+            }
+        }
+        
+        /* Tree Lines */
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute; top: 0; right: 50%;
+            border-top: 2px solid #1F6F6A;
+            width: 50%; height: 20px;
+        }
+        .tree li::after {
+            right: auto; left: 50%;
+            border-left: 2px solid #1F6F6A;
+        }
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+        .tree li:only-child { padding-top: 0;}
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+        .tree li:last-child::before{
+            border-right: 2px solid #1F6F6A;
+            border-radius: 0 5px 0 0;
+        }
+        .tree li:first-child::after{
+            border-radius: 5px 0 0 0;
+        }
+        .tree ul ul::before{
+            content: '';
+            position: absolute; top: 0; left: 50%;
+            border-left: 2px solid #1F6F6A;
+            width: 0; height: 20px;
+        }
+
+        #structure-content-container {
+            width: 100%;
+            overflow-x: auto;
+            padding-bottom: 2rem;
+            display: block;
+        }
+        
+        .fullscreen-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 10, 10, 0.95);
+            z-index: 100;
+            overflow: auto;
+            transform: scale(0.9);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .fullscreen-overlay.open {
+            transform: scale(1);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .custom-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9); 
+            z-index: 200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .custom-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .bio-info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem; 
+            padding: 0.5rem 0;
+            transition: background-color 0.3s;
+        }
+        .bio-icon-box {
+            flex-shrink: 0;
+            width: 3rem; 
+            height: 3rem; 
+            border-radius: 50%;
+            background: rgba(31, 111, 106, 0.2); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1E7A5E; 
+            font-size: 1.25rem; 
+            border: 1px solid rgba(30, 122, 94, 0.1);
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+        .bio-info-row:hover .bio-icon-box {
+            background: #1F6F6A; 
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(31, 111, 106, 0.4);
+        }
+        
+        .music-pulse {
+            animation: musicPulse 1.5s infinite;
+        }
+        @keyframes musicPulse {
+            0% { box-shadow: 0 0 0 0 rgba(31, 111, 106, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(31, 111, 106, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(31, 111, 106, 0); }
+        }
+
+        .play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(31, 111, 106, 0.85);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 0 25px rgba(31, 111, 106, 0.6);
+            z-index: 10;
+        }
+        .group:hover .play-overlay {
+            background: rgba(255, 255, 255, 0.95);
+            color: #1F6F6A;
+            transform: translate(-50%, -50%) scale(1.15);
+        }
+
+        .img-loading-skeleton {
+            position: absolute;
+            inset: 0;
+            background-color: #0d1a1a; 
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 0;
+        }
+
+        #structure-loading-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 10, 10, 0.8);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        #structure-loading-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-teal-700 selection:text-white" oncontextmenu="return false;">
+
+    <audio id="bg-music" loop>
+        <source src="the winer is.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="intro-screen">
+        <div class="text-center">
+            <h1 class="font-tech text-4xl md:text-7xl font-bold text-white mb-4 tracking-widest neon-text">
+                STARCOMTIVE <span id="typing-text" class="text-[#1E7A5E] typing-cursor"></span>
+            </h1>
+            <p class="text-gray-400 text-sm md:text-lg mb-8 font-light tracking-[0.3em]">2025 | GENERATION OF SUCCESS</p>
+            
+            <button onclick="enterSite()" class="group relative px-8 py-3 bg-transparent overflow-hidden rounded-full border border-[#1F6F6A] transition-all hover:shadow-[0_0_20px_rgba(31,111,106,0.5)]">
+                <span class="relative z-10 text-white font-tech tracking-wider group-hover:text-black transition-colors duration-300">VISIT CLASS</span>
+                <div class="absolute inset-0 h-full w-full scale-0 rounded-full transition-all duration-300 group-hover:scale-100 group-hover:bg-[#1F6F6A]"></div>
+            </button>
+        </div>
+    </div>
+
+    <div id="main-app" class="hidden opacity-0 transition-opacity duration-1000 min-h-screen flex flex-col">
+        <nav class="fixed top-0 w-full z-50 glass-panel border-b border-teal-900/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex-shrink-0 cursor-pointer" onclick="switchTab('home')">
+                        <span class="font-tech text-2xl font-bold text-[#1F6F6A] tracking-tighter">STARCOMTIVE<span class="text-white">
+                  (XIB)</span></span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <button onclick="switchTab('home')" class="nav-btn text-white hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</button>
+                            <button onclick="switchTab('structure')" class="nav-btn text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Structure</button>
+                            <button onclick="switchTab('documentation')" class="nav-btn text-gray-300 hover:text-teal-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Documentation</button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4">
+                        <button onclick="toggleMusic()" id="music-btn" class="w-8 h-8 rounded-full bg-teal-900/50 flex items-center justify-center text-teal-400 border border-teal-500/30 hover:bg-teal-600 hover:text-white transition-all music-pulse">
+                            <i class="fas fa-music"></i>
+                        </button>
+                        <div class="md:hidden">
+                            <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white p-2">
+                                <i class="fas fa-bars text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-teal-900/30">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <button onclick="switchTab('home')" class="text-gray-300 hover:text-teal-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Home</button>
+                    <button onclick="switchTab('structure')" class="text-gray-300 hover:text-teal-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Structure</button>
+                    <button onclick="switchTab('documentation')" class="text-gray-300 hover:text-teal-400 block px-3 py-2 rounded-md text-base font-medium w-full text-left">Documentation</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-[#000d0d] to-black opacity-80"></div>
+            <div class="hidden md:block absolute top-[-10%] left-[-10%] w-96 h-96 bg-[#1F6F6A] rounded-full mix-blend-multiply filter blur-[100px] opacity-20 animate-pulse-slow"></div>
+            <div class="hidden md:block absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-[#1E7A5E] rounded-full mix-blend-multiply filter blur-[100px] opacity-20 animate-pulse-slow"></div>
+        </div>
+
+        <main class="flex-grow pt-20 px-4 md:px-8 max-w-7xl mx-auto w-full">
+
+            <section id="home" class="active-section py-10">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="space-y-6 text-center md:text-left">
+                        <div class="md:hidden mb-4 flex justify-center">
+                            <img src="IAINU.jpg" alt="Class Logo Mobile" class="w-30 h-30 object-contain filter drop-shadow-[0_0_10px_rgba(31,111,106,0.5)]">
+                        </div>
+
+                        <h2 class="text-5xl md:text-6xl font-bold font-tech leading-tight">
+                            WELCOME TO <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#1F6F6A] to-[#1E7A5E]">starcomtive</span>
+                        </h2>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            "Kami tidak hanya diajarkan cara mentransfer ilmu, tapi juga cara menanamkan adab. Karena ilmu tanpa adab seperti api tanpa kayu bakar, tak akan memberi kehangatan yang lama."
+                        </p>
+                        <div class="flex gap-4 pt-4 justify-center md:justify-start">
+                            <button onclick="switchTab('documentation')" class="px-6 py-3 bg-[#1F6F6A] hover:bg-[#1E7A5E] rounded-lg text-white font-semibold transition-all shadow-[0_0_15px_rgba(31,111,106,0.5)]">
+                                Let's Go !!!
+                            </button>
+                            <button onclick="switchTab('structure')" class="px-6 py-3 border border-teal-800 hover:border-teal-500 hover:text-teal-400 rounded-lg text-gray-300 font-semibold transition-all">
+                                Mahasiswa
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-teal-900/30">
+                            <div><h3 class="text-2xl font-bold text-white">34</h3><p class="text-xs text-gray-500 uppercase">Siswa</p></div>
+                            <div><h3 class="text-2xl font-bold text-white">19</h3><p class="text-xs text-gray-500 uppercase">Laki-laki</p></div>
+                            <div><h3 class="text-2xl font-bold text-white">15</h3><p class="text-xs text-gray-500 uppercase">Perempuan</p></div>
+                        </div>
+                    </div>
+
+                    <div class="relative animate-float hidden md:block">
+                        <div class="flex justify-center mb-6">
+                            <img src="LOGO.png" alt="Class Logo" class="w-32 h-32 object-contain filter drop-shadow-[0_0_15px_rgba(31,111,106,0.5)] hover:scale-110 transition-transform">
+                        </div>
+                        <div class="glass-panel p-8 rounded-2xl transform rotate-3 hover:rotate-0 transition-all border border-teal-500/20">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#1F6F6A] to-black flex items-center justify-center">
+                                    <i class="fas fa-quote-left text-white"></i>
+                                </div>
+                                <div><h4 class="font-bold text-lg">Motto Kelas</h4><p class="text-xs text-teal-400">Since 2025</p></div>
+                            </div>
+                            <blockquote class="text-xl font-light italic text-gray-300 mb-6">
+                                "Microteaching itu memang mendebarkan, tapi lebih mendebarkan lagi kalau melihat generasi muda rusak karena kurangnya pendidikan karakter."
+                            </blockquote>
+                            <div class="flex justify-between items-center text-sm text-gray-500">
+                                <span>starcomtive Family</span>
+                                <i class="fas fa-fingerprint text-[#1F6F6A] text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="structure" class="hidden-section py-10 relative min-h-[600px]">
+                <div class="mb-12">
+                    <div class="text-center mb-6">
+                        <h2 class="text-3xl md:text-5xl font-tech font-bold text-white mb-2">STRUKTUR KELAS</h2>
+                        <div class="h-1 w-20 bg-[#1F6F6A] mx-auto rounded-full"></div>
+                    </div>
+                    <div class="max-w-4xl mx-auto px-4 flex justify-center">
+                        <div class="relative w-full max-w-sm flex items-center justify-center bg-black/40 h-16 rounded-full border border-teal-900/30 backdrop-blur-sm">
+                            <button onclick="prevSemester()" id="btn-prev-sem" class="absolute left-4 z-20 text-2xl text-[#1F6F6A] hover:text-white transition-all">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="text-center w-full relative z-10">
+                                <h3 id="current-semester-display" class="font-tech text-2xl text-white font-bold tracking-widest drop-shadow-[0_0_10px_rgba(31,111,106,0.8)]">SEMESTER I</h3>
+                            </div>
+                            <button onclick="nextSemester()" id="btn-next-sem" class="absolute right-4 z-20 text-2xl text-[#1F6F6A] hover:text-white transition-all">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div id="structure-loading-overlay">
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 border-4 border-[#1F6F6A] border-t-transparent rounded-full animate-spin-slow mb-4 shadow-[0_0_15px_rgba(31,111,106,0.5)]"></div>
+                            <div class="text-[#1F6F6A] font-tech text-lg animate-pulse" id="structure-loader-text">Beralih...</div>
+                        </div>
+                    </div>
+                    <div id="structure-content-container"></div>
+                </div>
+
+                <div class="text-center mt-12 flex flex-col items-center gap-4">
+                    <button onclick="toggleFamilyGallery()" class="group relative px-10 py-4 bg-gradient-to-r from-[#001f1f] to-black overflow-hidden rounded-xl border border-teal-600/50 shadow-[0_0_30px_rgba(31,111,106,0.2)] hover:shadow-[0_0_50px_rgba(31,111,106,0.6)] transition-all">
+                        <div class="flex items-center gap-3 relative z-10">
+                            <i class="fas fa-users text-2xl text-teal-400 group-hover:text-white"></i>
+                            <span class="font-tech text-xl font-bold text-white tracking-widest">FAMILY OF STARCOMTIVE (XIB)</span>
+                        </div>
+                        <div class="absolute inset-0 bg-[#1F6F6A] opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </button>
+                </div>
+            </section>
+
+            <section id="documentation" class="hidden-section py-10">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-5xl font-tech font-bold text-white mb-2">ARCHIVES</h2>
+                    <div class="h-1 w-20 bg-[#1F6F6A] mx-auto rounded-full mb-4"></div>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-3 max-w-xl mx-auto">
+                        <div class="relative w-full">
+                            <input type="text" id="doc-search" placeholder="Search by title..." onkeyup="handleSearch(event)"
+                                   class="w-full bg-black/40 border border-teal-500/30 rounded-lg px-4 py-2 text-white focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all">
+                        </div>
+                        <button onclick="openAllFiles()" class="w-full md:w-auto bg-teal-900/30 hover:bg-teal-800 border border-teal-500/50 text-white px-6 py-2 rounded-lg text-sm transition-all flex items-center justify-center gap-2">
+                            <i class="fas fa-th-large"></i> All Files
+                        </button>
+                    </div>
+                </div>
+                <div id="documentation-grid" class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6"></div>
+            </section>
+        </main>
+
+        <footer class="border-t border-teal-900/30 bg-black/90 mt-12 pt-12 pb-8">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8 border-b border-teal-900/30 pb-8">
+                    <div class="text-left">
+                         <h3 class="font-tech text-xl text-white font-bold mb-4 border-b-2 border-[#1F6F6A] inline-block pb-1"> KELAS XIB</h3>
+                         <p class="text-gray-400 text-sm mt-2">Mencetak pendidik yang berakhlak mulia dan kompeten dalam menjawab tantangan zaman.</p>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-tech text-xl text-white font-bold mb-4 border-b-2 border-[#1F6F6A] inline-block pb-1">KONTAK KAMI</h3>
+                        <div class="mt-2 flex flex-col gap-2">
+                            <a href="#" class="text-gray-400 text-sm flex items-center hover:text-white transition-colors">
+                                <i class="fas fa-map-marker-alt text-[#1E7A5E] w-6 mr-2"></i> Jl. Merapi No. 12
+                            </a>
+                            <a href="https://www.instagram.com/starcomtive.id" target="_blank" class="text-gray-400 text-sm flex items-center hover:text-white transition-colors">
+                                <i class="fab fa-instagram text-[#1E7A5E] w-6 mr-2"></i> @STARCOMTIVE.ID
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-tech text-xl text-white font-bold mb-4 border-b-2 border-[#1F6F6A] inline-block pb-1">AKADEMIK</h3>
+                        <div class="mt-2 text-gray-400 text-sm">
+                            <p class="mb-2"><i class="fas fa-graduation-cap text-[#1E7A5E] mr-2"></i> SMA BUDI UTOMO KOTA BENGKULU</p>
+                            <p class="mb-2"><i class="fas fa-calendar-alt text-[#1E7A5E] mr-2"></i> Angkatan 2025-2026</p>
+                             <p class="text-gray-400 text-sm"><i class="fas fa-users text-red-500 mr-2"></i> Kelas XI B</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div id="family-gallery" class="fullscreen-overlay" tabindex="0">
+        <div class="max-w-7xl mx-auto px-4 pt-24 pb-10 relative">
+            <button onclick="toggleFamilyGallery()" class="fixed top-6 right-6 z-50 bg-[#1F6F6A] text-white w-12 h-12 rounded-full hover:bg-[#1E7A5E] transition flex items-center justify-center text-xl shadow-lg">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-6xl font-tech font-bold text-white mb-2">FAMILY (XIB)</h2>
+                <p class="text-teal-400 text-lg">Selalu di Hati</p>
+            </div>
+            <div id="student-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6"></div>
+        </div>
+    </div>
+
+    <div id="bio-modal" class="custom-modal" onclick="closeBioModal(event)">
+        <div id="bio-content" class="glass-panel w-[90%] md:w-full max-w-6xl max-h-[90vh] overflow-y-auto transform scale-95 transition-all rounded-2xl flex flex-col md:flex-row bg-black/90 border border-teal-500/30">
+            <div class="w-full md:w-5/12 aspect-[9/16] relative bg-gray-900 group shrink-0">
+                <div id="modal-img-loader" class="img-loading-skeleton"><i class="fas fa-spinner fa-spin text-teal-900 text-4xl"></i></div>
+                <img id="modal-img" src="" class="relative z-10 w-full h-full object-cover transition-opacity opacity-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent z-20"></div>
+            </div>
+            <div class="w-full md:w-7/12 p-6 md:p-10 flex flex-col justify-center text-left relative">
+                <div class="absolute top-0 right-0 p-6 opacity-10 hidden md:block">
+                    <i class="fas fa-fingerprint text-9xl text-teal-600"></i>
+                </div>
+
+                </div>
+                 <button onclick="closeBioModal(null, true)" class="hidden md:flex absolute top-6 right-6 text-white/50 hover:text-white transition text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="media-modal" class="custom-modal" onclick="closeMediaModal(event)">
+        <div class="relative max-w-5xl w-full mx-4 flex justify-center">
+            <button onclick="closeMediaModal(null, true)" class="absolute -top-12 right-0 md:-right-12 text-white hover:text-teal-500 text-3xl transition z-50">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="media-container" class="max-h-[85vh] rounded-lg border border-teal-500/30"></div>
+        </div>
+    </div>
+
+    <script>
+        const textToType = "FAMILY (XIB)";
+        const typingElement = document.getElementById('typing-text');
+        let i = 0;
+
+        function typeWriter() {
+            if (i < textToType.length) {
+                typingElement.innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, 150);
+            }
+        }
+
+        window.onload = function() {
+            typeWriter();
+            generateStudents(); 
+            initDocumentation(); 
+            updateSemesterDisplay(); 
+        };
+
+        function enterSite() {
+            const intro = document.getElementById('intro-screen');
+            const mainApp = document.getElementById('main-app');
+            const audio = document.getElementById('bg-music');
+            if (audio) audio.play().catch(e => console.log(e));
+            intro.style.transform = 'translateY(-100%)';
+            intro.style.opacity = '0';
+            mainApp.classList.remove('hidden');
+            setTimeout(() => { mainApp.style.opacity = '1'; }, 100);
+        }
+
+        let isPlaying = true;
+        function toggleMusic() {
+            const audio = document.getElementById('bg-music');
+            const btn = document.getElementById('music-btn');
+            if (isPlaying) {
+                audio.pause();
+                btn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                btn.classList.remove('music-pulse');
+                isPlaying = false;
+            } else {
+                audio.play();
+                btn.innerHTML = '<i class="fas fa-music"></i>';
+                btn.classList.add('music-pulse');
+                isPlaying = true;
+            }
+        }
+
+        function switchTab(tabId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+                section.classList.add('hidden-section');
+                section.style.display = 'none';
+            });
+            const target = document.getElementById(tabId);
+            if (target) {
+                target.style.display = 'block'; 
+                void target.offsetWidth; 
+                target.classList.remove('hidden-section');
+                target.classList.add('active-section');
+            }
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        // SEMESTER & STRUCTURE DATA
+        const semesterList = ["I", "II"];
+        let currentSemesterIndex = 0;
+        
+        const structureData = {
+            "I": {
+                ketua: { name: "Revan Fadli M.", img: "https://i.ibb.co.com/JWWfP2bz/IMG-20251224-WA0027.jpg" },
+                wakil: { name: "Taufan nofriansyah", img: "https://i.ibb.co.com/nNqSxbkm/IMG-20251224-WA0019.jpg" },
+                sek1: { name: "Aulia Azahra.", img: "https://i.ibb.co.com/Ps52T4YV/IMG-20251224-WA0008.jpg" },
+                sek2: { name: "M.Thoriq Tsuroya", img: "https://i.ibb.co.com/dwXdtK4Y/IMG-20251224-WA0004.jpg" },
+                ben1: { name: "Faris Daffa N.i", img: "https://i.ibb.co.com/DDFh9JPR/IMG-20251224-WA0033.jpg" },
+                ben2: { name: "Naila Azkia", img: "https://i.ibb.co.com/DP7PCGGF/IMG-20251224-WA0022.jpg" }
+            },
+            "II": {
+                ketua: { name: "Revan Fadli M.", img: "https://i.ibb.co.com/JWWfP2bz/IMG-20251224-WA0027.jpg" },
+                wakil: { name: "Taufan nofriansyah", img: "https://i.ibb.co.com/nNqSxbkm/IMG-20251224-WA0019.jpg" },
+                sek1: { name: "Aulia Azahra.", img: "https://i.ibb.co.com/Ps52T4YV/IMG-20251224-WA0008.jpg" },
+                sek2: { name: "M.Thoriq Tsurya", img: "https://i.ibb.co.com/dwXdtK4Y/IMG-20251224-WA0004.jpg" },
+                ben1: { name: "Faris Daffa N.i", img: "https://i.ibb.co.com/DDFh9JPR/IMG-20251224-WA0033.jpg" },
+                ben2: { name: "Nayla Azkia", img: "https://i.ibb.co.com/wNTn5F9v/IMG-20251224-WA0014.jpg" }
+            }
+        };
+
+        function createCard(img, name, role) {
+            return `
+             <div class="glass-panel text-center p-2 md:p-4 rounded-xl border border-teal-500/30 inline-block w-28 md:w-48 hover:bg-teal-900/40 transition-colors z-10 relative mx-1 mb-2">
+                <div class="w-12 h-12 md:w-16 md:h-16 mx-auto bg-gray-700 rounded-full mb-2 overflow-hidden border-2 border-[#1F6F6A]">
+                    <img src="${img}" class="w-full h-full object-cover" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=1F6F6A&color=fff';">
+                </div>
+                <h3 class="font-bold text-white text-[10px] md:text-sm break-words">${name}</h3>
+                <p class="text-[8px] md:text-[10px] text-teal-400 uppercase tracking-wider">${role}</p>
+            </div>`;
+        }
+
+        function updateSemesterDisplay() {
+            const sem = semesterList[currentSemesterIndex];
+            const displayEl = document.getElementById('current-semester-display');
+            displayEl.innerText = `SEMESTER ${sem}`;
+            
+            const loader = document.getElementById('structure-loading-overlay');
+            loader.classList.add('active');
+            
+            setTimeout(() => {
+                const data = structureData[sem];
+                const container = document.getElementById('structure-content-container');
+                container.innerHTML = `
+                    <div class="tree">
+                        <ul>
+                            <li>
+                                ${createCard(data.ketua.img, data.ketua.name, "Ketua Kelas")}
+                                <ul>
+                                    <li>
+                                        ${createCard(data.wakil.img, data.wakil.name, "Wakil Ketua")}
+                                        <ul>
+                                            <li>
+                                                <div class="flex flex-col gap-4 items-center pt-4">
+                                                    ${createCard(data.sek1.img, data.sek1.name, "Sekretaris 1")}
+                                                    ${createCard(data.sek2.img, data.sek2.name, "Sekretaris 2")}
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="flex flex-col gap-4 items-center pt-4">
+                                                    ${createCard(data.ben1.img, data.ben1.name, "Bendahara 1")}
+                                                    ${createCard(data.ben2.img, data.ben2.name, "Bendahara 2")}
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>`;
+                loader.classList.remove('active');
+            }, 500);
+        }
+
+        function nextSemester() { if (currentSemesterIndex < semesterList.length - 1) { currentSemesterIndex++; updateSemesterDisplay(); } }
+        function prevSemester() { if (currentSemesterIndex > 0) { currentSemesterIndex--; updateSemesterDisplay(); } }
+
+        // STUDENT & DOC DATA (Sama seperti sebelumnya namun aksen warna disesuaikan di render)
+        const studentsData = [
+            { name: "adianca nur khofid", img: "https://i.ibb.co.com/6cfJXwNf/IMG-20251224-WA0025.jpg" },
+            { name: "agita nasrulloh", nim: "2511046", ig: "@bangkriii_", img: "https://i.ibb.co.com/mF03hk8X/IMG-20251224-WA0011.jpg" },
+            { name: "aldetian luhur shafari", img: "https://i.ibb.co.com/xq2FL3ym/IMG-20251224-WA0018.jpg" },
+            { name: "aldi susanto", img: "https://i.ibb.co.com/XkFTLdMV/IMG-20251224-WA0017.jpg" },
+            { name: "anni nikmatus sholeha", img: "https://i.ibb.co.com/My9Lr9qS/IMG-20251224-WA0007.jpg" },
+            { name: "auliana azahra", img: "https://i.ibb.co.com/Ps52T4YV/IMG-20251224-WA0008.jpg" },
+            { name: "Bintang Mahardin.R",img: "https://i.ibb.co.com/B2J3d3zc/IMG-20251224-WA0023.jpg", },
+            { name: "fadlan abdul syukur.",img: "https://i.ibb.co.com/WvcNqp2F/IMG-20251224-WA0028.jpg", },
+            { name: "fatihah aska maulidia",img: "https://i.ibb.co.com/C576QXFq/IMG-20251224-WA0024.jpg", },
+            { name: "faris dafa nur ikhsan", img: "https://i.ibb.co.com/Mx5W00JT/IMG-20251224-WA0033.jpg", },
+            { name: "febian seviro alviantino", img: "https://i.ibb.co.com/23pBYtfp/IMG-20251224-WA0036.jpg",},
+            { name: "gea arifah khoirunnisa fadhillah", img: "https://i.ibb.co.com/rRJFM1mm/IMG-20251224-WA0016.jpg", },
+           { name: "ilham karimulloh assidiq", img: "https://i.ibb.co.com/7xJH0N03/IMG-20251224-WA0009.jpg" },
+            { name: "indah amelia putri", img: "https://i.ibb.co.com/fGnyP58V/IMG-20251224-WA0021.jpg" },
+            { name: "isnaini afiyatin", img: "https://i.ibb.co.com/CqLK7vM/IMG-20251224-WA0029.jpg" },
+            { name: "julian nur fizan", img: "https://i.ibb.co.com/27xkLSTN/IMG-20251224-WA0020.jpg" },
+            { name: "levinta syifaul khusna", img: "https://i.ibb.co.com/C3msC7Xs/IMG-20251224-WA0026.jpg.jpg" },
+            { name: "luna gonita azaroh", img: "https://i.ibb.co.com/Ps2N15pR/IMG-20251224-WA0006.jpg" },
+            { name: "m.fatkhan arkana",img: "https://i.ibb.co.com/0j2vs0Wm/IMG-20251224-WA0035.jpg", },
+            { name: "m.hisyam abdulloh.",img: "https://i.ibb.co.com/S4SdFhYy/IMG-20251224-WA0034.jpg", },
+            { name: "m.lutfan abdillah",img: "https://i.ibb.co.com/8LWGfCkF/IMG-20251224-WA0013.jpg", },
+            { name: "m.thoriq tsuroya", img: "https://i.ibb.co.com/dwXdtK4Y/IMG-20251224-WA0004.jpg", },
+            { name: "m.rafi suryadinata", img: "https://i.ibb.co.com/DP7PCGGF/IMG-20251224-WA0022.jpg",},
+            { name: "naila azkiya", img: "https://i.ibb.co.com/DP7PCGGF/IMG-20251224-WA0022.jpg", },
+            { name: "prabu ari mubarok.",img: "https://i.ibb.co.com/35qHVVCt/IMG-20251224-WA0032.jpg", },
+            { name: "rahmad fauzan",img: "https://i.ibb.co.com/NdCKs5j5/IMG-20251224-WA0010.jpg", },
+            { name: "revand fadli maulana", img: "https://i.ibb.co.com/JWWfP2bz/IMG-20251224-WA0027.jpg", },
+            { name: "rosi wanmay ramadhani", img: "https://i.ibb.co.com/HLrPcVYq/IMG-20251224-WA0031.jpg",},
+            { name: "taufan novriansyah", img: "https://i.ibb.co.com/nNqSxbkm/IMG-20251224-WA0019.jpg", },
+           { name: "ulfa wilda yanti", img: "https://i.ibb.co.com/PvWq2n1J/IMG-20251224-WA0005.jpg" },
+            { name: "valen rahmawati", img: "https://i.ibb.co.com/5xfm9VG9/IMG-20251224-WA0003.jpg" },
+            { name: "zeta julianti", img: "https://i.ibb.co.com/rfvpSnxX/IMG-20251224-WA0015.jpg" },
+            { name: "zulvia nur aini", img: "https://i.ibb.co.com/FbYcn3kw/IMG-20251224-WA0012.jpg" },
+            
+        ];
+
+        function generateStudents() {
+            const grid = document.getElementById('student-grid');
+            grid.innerHTML = studentsData.map((s, i) => `
+                <div onclick="openBioModal('${i}')" class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-xl aspect-square border-2 border-transparent group-hover:border-teal-500 transition-all bg-gray-900">
+                        <img src="${s.img}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(s.name)}&background=1F6F6A&color=fff';">
+                        <div class="absolute bottom-2 left-2 right-2 z-20"><p class="text-white font-bold text-sm truncate">${s.name}</p></div>
+                    </div>
+                </div>`).join('');
+        }
+
+        function openBioModal(idx) {
+            const s = studentsData[idx];
+            document.getElementById('modal-name').innerText = s.name;
+            document.getElementById('modal-nim').innerText = "NIM: " + s.nim;
+            document.getElementById('modal-ig').innerText = s.ig;
+            document.getElementById('modal-bio').innerText = `"${s.bio}"`;
+            document.getElementById('modal-img').src = s.bioImg;
+            document.getElementById('modal-img').download = function() { this.classList.add('opacity-100'); document.getElementById('modal-img-loader').style.display='none'; };
+            document.getElementById('bio-modal').classList.add('active');
+        }
+
+        function closeBioModal() { document.getElementById('bio-modal').classList.remove('active'); }
+
+        const mediaData = [{ type: 'video', src: 'BagiRapot.mp4', title: 'BAGI RAPOT ', ratio: 'aspect-[9/16]' },
+            { type: 'image', src: 'LOGO.png', title: 'Logo', ratio: 'aspect-square' },
+            { type: 'video', src: 'KATA-KATA.mp4', title: 'motto', ratio: 'aspect-video' },
+            { type: 'image', src: 'IMG_4262.JPG', title: 'Fotbar', ratio: 'aspect-[4/5]' },
+            { type: 'image', src: 'IMG_2711.JPG', title: 'Fotbar', ratio: 'aspect-[9/16]' }
+            
+        ];
+
+        function initDocumentation() {
+            document.getElementById('documentation-grid').innerHTML = mediaData.map(m => `
+                <div class="break-inside-avoid relative group rounded-xl ${m.ratio} overflow-hidden glass-panel mb-6 cursor-pointer" onclick="openMediaModal('${m.type}', '${m.src}')">
+                    ${m.type==='image' ? `<img src="${m.src}" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">` : `<div class="w-full h-full bg-black/50 flex items-center justify-center"><i class="fas fa-play text-white text-4xl"></i></div>`}
+                    <div class="absolute bottom-4 left-4"><h3 class="text-lg font-bold text-white">${m.title}</h3></div>
+                </div>`).join('');
+        }
+
+        function openMediaModal(type, src) {
+            const container = document.getElementById('media-container');
+            container.innerHTML = type === 'video' ? `<video controls autoplay class="max-h-[85vh]"><source src="${src}"></video>` : `<img src="${src}" class="max-h-[85vh]">`;
+            document.getElementById('media-modal').classList.add('active');
+        }
+
+        function closeMediaModal() { document.getElementById('media-modal').classList.remove('active'); }
+        function toggleFamilyGallery() { document.getElementById('family-gallery').classList.toggle('open'); }
+        function openAllFiles() { alert("Fitur galeri lengkap akan segera hadir!"); }
+    </script>
+</body>
+</html>
