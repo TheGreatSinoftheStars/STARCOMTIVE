@@ -6,7 +6,7 @@
     <title> STARCOMTIVE (XIB)</title>
     
     <meta name="description" content="Kelas XIB angkatan 2025-2026 SMA BUDI UTOMO Galeri, Struktur Organisasi, dan Dokumentasi Kegiatan Mahasiswa.">
-    <meta name="keywords" content="STARCOMTIVE XI SMA BUDI UTOMO">
+    <meta name="keywords" content="STARCOMTIVE XIB, SMA BUDI UTOMO, ANGKATAN 2025-2026">
     <meta name="theme-color" content="#000000">
     
     <meta property="og:site_name" content=""STARCOMTIVE SMA BUDI UTOMO>
@@ -849,7 +849,7 @@
         const mediaData = [{ type: 'video', src: 'BagiRapot.mp4', title: 'BAGI RAPOT ', ratio: 'aspect-[9/16]' },
             { type: 'video', src: 'JJ.mp4', title: 'JJ ', ratio: 'aspect-[9/16]' },
             { type: 'image', src: 'LOGO.png', title: 'Logo', ratio: 'aspect-square' },
-            { type: 'video', src: 'war is over.mp4 ', title: 'WAR IS OVER!', ratio: 'aspect-video' },
+            { type: 'video', src: 'war is over.mp4 ', title: 'WAR IS OVER!', ratio: 'aspect-[9/16]' },
             { type: 'image', src: 'IMG_4262.JPG', title: 'Fotbar', ratio: 'aspect-[9/16]' },
             { type: 'image', src: 'IMG_2711.JPG', title: 'Fotbar', ratio: 'aspect-[9/16]' }
             
@@ -882,14 +882,6 @@
         function closeMediaModal() { document.getElementById('media-modal').classList.remove('active'); }
         function toggleFamilyGallery() { document.getElementById('family-gallery').classList.toggle('open'); }
         function openAllFiles() { alert("Fitur galeri lengkap akan segera hadir!"); }
-
-          document.addEventListener('visibilitychange', function() {
-            if (document.hidden) {
-                audio.pause();
-            } else if (isPlaying) {
-                audio.play();
-            }
-        });
   </script>
 </body>
 </html>
