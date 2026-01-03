@@ -882,6 +882,14 @@
         function closeMediaModal() { document.getElementById('media-modal').classList.remove('active'); }
         function toggleFamilyGallery() { document.getElementById('family-gallery').classList.toggle('open'); }
         function openAllFiles() { alert("Fitur galeri lengkap akan segera hadir!"); }
-    </script>
+
+          document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                audio.pause();
+            } else if (isPlaying) {
+                audio.play();
+            }
+        });
+  </script>
 </body>
 </html>
